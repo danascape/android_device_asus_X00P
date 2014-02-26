@@ -168,7 +168,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8937
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
