@@ -126,6 +126,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcrypto
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml
+
 # IPC router config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
