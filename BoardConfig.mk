@@ -115,6 +115,9 @@ BOARD_ROOT_EXTRA_SYMLINKS += /mnt/vendor/persist:/persist
 TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno505
 
+# QCOM hardware
+BOARD_USES_QCOM_HARDWARE := true
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
