@@ -28,7 +28,7 @@
     <array name="cpu.active.cluster0">
         <value>0.1</value>
     </array>
-    <item name="cpu.idle">0.1</item>
+    <item name="cpu.suspend">0.1</item>
     <array name="memory.bandwidths">
         <value>22.7</value>
     </array>
