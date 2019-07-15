@@ -6,6 +6,9 @@ persist.vendor.btstack.enable.splita2dp=false
 ro.qualcomm.cabl=2
 ro.vendor.display.cabl=2
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
