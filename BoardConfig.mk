@@ -187,8 +187,7 @@ BOARD_USES_QCOM_HARDWARE := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy - Common
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/qcom/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/qcom/sepolicy/public
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 # Sepolicy - X00P
 include device/asus/X00P-sepolicy/X00P-sepolicy.mk
