@@ -123,5 +123,9 @@ BOARD_USES_QCOM_HARDWARE := true
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
+# Treble
+BOARD_VNDK_RUNTIME_DISABLE := true
+BOARD_VNDK_VERSION := current
+
 # Inherit from the proprietary version
 include vendor/asus/X00P/BoardConfigVendor.mk
