@@ -68,9 +68,6 @@
          and the screen off animation has been performed. -->
      <bool name="config_dozeAfterScreenOffByDefault">false</bool>
 
-    <!-- Flag specifying whether or not IMS will use the ImsResolver dynamically -->
-     <bool name="config_dynamic_bind_ims">true</bool>
-
     <!--  Whether Multiuser UI should be shown -->
      <bool name="config_enableMultiUserUI">false</bool>
 
@@ -337,9 +334,6 @@
 
     <!-- Regex of wired ethernet ifaces -->
      <string name="config_ethernet_iface_regex">eth\\d</string>
-
-    <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
-     <string name="config_ims_package">org.codeaurora.ims</string>
 
     <!-- IWLAN data service package name to bind to by default. If none is specified in an overlay, an
          empty string is passed in -->
