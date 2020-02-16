@@ -36,6 +36,9 @@ persist.vendor.qcomsysd.enabled=1
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=pronto
 
+# Camera
+persist.vendor.camera.expose.aux=1
+
 # Dalvik
 dalvik.vm.heapgrowthlimit=192m
 dalvik.vm.heapmaxfree=8m
