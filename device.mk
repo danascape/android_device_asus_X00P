@@ -234,6 +234,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.volume.contents_mode=aes-256-xts
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Framework detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
