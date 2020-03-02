@@ -106,6 +106,8 @@ on early-boot
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
 
+    start vendor.sensors.qti
+
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
@@ -494,17 +496,10 @@ service qmiproxy /system/bin/qmiproxy
     group radio diag
     disabled
 
-service vendor.sensors /vendor/bin/sscrpcd sensorspd
-    class early_hal
-    user system
-    group system wakelock
-    capabilities BLOCK_SUSPEND
-
 service vendor.sensors.qti /vendor/bin/sensors.qti
     class core
     user system
     group system
-    disabled
 
 # Data Migration
 service vendor.move_wifi_data /system/bin/move_wifi_data.sh
@@ -527,11 +522,6 @@ service qcom-sh /vendor/bin/init.qcom.sh
     class late_start
     user root
     group root system radio
-    oneshot
-
-service vendor-sensor-sh /vendor/bin/init.qcom.sensors.sh
-    class core
-    user root
     oneshot
 
 service crashdata-sh /vendor/bin/init.qcom.crashdata.sh
