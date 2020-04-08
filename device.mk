@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
     android.hardware.audio@6.0 \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.common@6.0 \
@@ -115,7 +114,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio.effect@2.0-service \
     android.hardware.audio.effect@6.0 \
-    android.hardware.audio.effect@6.0-impl
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
