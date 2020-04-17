@@ -1,3 +1,5 @@
+# Proprietary files - from UL-ASUS_X00P-WW-AOSP-17.00.2003.23-user build, unless pinned
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/lib/libadsprpc.so
