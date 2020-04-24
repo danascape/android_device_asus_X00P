@@ -446,6 +446,9 @@ PRODUCT_PACKAGES += \
     libwpa_client
 
 PRODUCT_PACKAGES += \
+    WifiOverlay
+
+PRODUCT_PACKAGES += \
     hostapd \
     wcnss_service \
     wpa_supplicant \
