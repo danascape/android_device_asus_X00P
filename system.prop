@@ -7,6 +7,7 @@ ro.qualcomm.cabl=2
 ro.vendor.display.cabl=2
 
 # Charger
+ro.charger.disable_init_blank=true
 ro.charger.enable_suspend=true
 
 # CNE
