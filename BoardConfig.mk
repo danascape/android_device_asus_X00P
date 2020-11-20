@@ -190,9 +190,6 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 # Sepolicy - X00P
 include device/asus/X00P-sepolicy/X00P-sepolicy.mk
 
-# Telephony
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
