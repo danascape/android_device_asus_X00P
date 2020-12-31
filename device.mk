@@ -182,6 +182,7 @@ PRODUCT_PACKAGES += \
     init.qti.ims.sh
 
 PRODUCT_PACKAGES += \
+    init.device.rc \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
