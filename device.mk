@@ -18,6 +18,10 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Screen density
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 720
