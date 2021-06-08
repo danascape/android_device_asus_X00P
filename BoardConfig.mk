@@ -130,6 +130,9 @@ BOARD_USES_QCOM_HARDWARE := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Sepolicy - X00P
+include device/asus/X00P-sepolicy/X00P-sepolicy.mk
+
 # Telephony
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
