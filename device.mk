@@ -123,6 +123,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# CNE
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig
+
 # Framework detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
@@ -230,6 +234,16 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
+
+# RIL
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    libxml2
+
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.secure_element@1.0
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
