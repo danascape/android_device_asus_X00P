@@ -87,7 +87,12 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a \
 				                  setprop persist.vendor.usb.config diag,serial_smd,rmnet_ipa,adb
 				               ;;
 				               *)
-				                  setprop persist.vendor.usb.config diag,serial_smd,rmnet_qti_bam,adb
+                                                  #dong.wang add for fix 1348870 start
+                                                  build_type=`getprop ro.build.type`
+                                                  if [ "$build_type" == "userdebug" ]; then
+                                                         setprop persist.vendor.usb.config diag,serial_smd,rmnet_qti_bam,adb
+                                                  fi
+                                                  #dong.wang add for fix 1348870 end
 				               ;;
 			               esac
 			    fi
