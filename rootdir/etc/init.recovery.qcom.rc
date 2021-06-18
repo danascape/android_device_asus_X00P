@@ -46,6 +46,7 @@ on init
 
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
+    wait /sys/class/udc/${ro.boot.usbcontroller} 1
 
 on property:sys.usb.ffs.ready=1
     mkdir /config/usb_gadget/g1/configs/b.1 0777 shell shell
