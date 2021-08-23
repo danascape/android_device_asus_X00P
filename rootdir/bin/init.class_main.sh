@@ -74,7 +74,7 @@ case "$baseband" in
                     sed -n 's/^[^:]*modem[^:]*:[[:blank:]]*//p' |
                     sed 's/.*JO.\(.*\)/\1/g' | cut -d \- -f 1`
             if [ ! -z $version ]; then
-                if [ "$version" \< "3.2" ]; then
+                if [ "$version" \< "3.1" ]; then
                     qcrild_status=false
                 fi
             fi
