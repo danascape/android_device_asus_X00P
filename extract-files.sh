@@ -77,6 +77,18 @@ extract "${MY_DIR}"/proprietary-files.txt "${SRC}" \
 
 DEVICE_BLOB_ROOT="${LINEAGE_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
 
+#
+# Fix xml version
+#
+function fix_xml_version () {
+    sed -i \
+        's/xml version="2.0"/xml version="1.0"/' \
+        "$DEVICE_BLOB_ROOT"/"$1"
+}
+
+fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
+fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
+
 for blob in libarcsoft_nighthawk.so libarcsoft_piczoom.so libarcsoft_videostab.so libarcsoft_night_shot.so; do
     patchelf --remove-needed "libandroid.so" "$DEVICE_BLOB_ROOT/vendor/lib/$blob"
 done
