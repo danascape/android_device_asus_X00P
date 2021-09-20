@@ -61,6 +61,9 @@ ro.com.android.dataroaming=false
 ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 ro.com.google.rlzbrandcode=ASUP
 
+# GPS
+ro.gps.agps_provider=1
+
 # Keyguard
 keyguard.no_require_sim=true
 
