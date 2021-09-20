@@ -1,6 +1,5 @@
 # Bluetooth
 bluetooth.hfp.client=1
-ro.bluetooth.library_name=libbluetooth_qti.so
 persist.vendor.btstack.enable.splita2dp=false
 
 # Cabl
