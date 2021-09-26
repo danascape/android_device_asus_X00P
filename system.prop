@@ -119,7 +119,7 @@ vendor.vidc.enc.narrow.searchrange=1
 persist.qfp=false
 
 # Cutoff voltage
-ro.cutoff_voltage_mv=3200
+ro.cutoff_voltage_mv=3400
 
 # emmc size
 ro.emmc_size=32GB
@@ -133,6 +133,3 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam
 # Whitelist the below packages
 persist.vendor.camera.privapp.list=org.codeaurora.snapcam
 persist.camera.privapp.list=org.codeaurora.snapcam
-
-# Cutoff voltage
-ro.cutoff_voltage_mv=3400
