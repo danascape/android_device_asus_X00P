@@ -122,7 +122,7 @@ persist.qfp=false
 ro.cutoff_voltage_mv=3200
 
 # emmc size
-ro.emmc_size=16GB
+ro.emmc_size=32GB
 
 # Camera
 vendor.camera.hal1.packagelist=com.skype.raider,com.google.android.talk
