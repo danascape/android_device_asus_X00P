@@ -167,6 +167,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     libgui_vendor \
+    libgui_shim \
     libmmjpeg_interface \
     libmm-qcamera \
     libstdc++.vendor
