@@ -28,4 +28,4 @@
 #/dev/block/bootdevice/by-name/xrom          /xrom               ext4    noatime,nosuid,nodev,barrier=1              wait,check,formattable
 
 # ZRAM
-/dev/block/zram0                         none        swap   defaults    zramsize=2147483648
+/dev/block/zram0                         none        swap   defaults    zramsize=1073741824
