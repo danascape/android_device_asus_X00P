@@ -2302,10 +2302,6 @@ lib/libqti_performance.so
 lib64/libqti-perfd-client_system.so
 lib64/libqti-util_system.so
 lib64/libqti_performance.so
-product/lib/vendor.qti.hardware.perf@1.0.so
-product/lib/vendor.qti.hardware.perf@2.0.so
-product/lib64/vendor.qti.hardware.perf@1.0.so
-product/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/bin/msm_irqbalance
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
@@ -2322,8 +2318,6 @@ vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters-ns.so
@@ -2334,8 +2328,6 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
 # Perf-IOP
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
