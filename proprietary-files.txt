@@ -1785,17 +1785,6 @@ vendor/lib64/libmmcamera_dbg.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib/libcdsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libfastrpc_utf_stub.so
-vendor/lib/libsysmon_cdsp_skel.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libfastrpc_utf_stub.so
-vendor/lib64/libsysmon_cdsp_skel.so
-
 # CNE
 etc/cne/Nexus/ATT/ATT_profiles.xml
 etc/cne/Nexus/ROW/ROW_profiles.xml
