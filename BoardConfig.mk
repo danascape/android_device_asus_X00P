@@ -188,7 +188,6 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 include device/asus/X00P-sepolicy/X00P-sepolicy.mk
 
 # Treble
-BOARD_VNDK_RUNTIME_DISABLE := true
 BOARD_VNDK_VERSION := current
 
 # Vendor security patch level
