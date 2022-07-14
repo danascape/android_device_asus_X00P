@@ -51,6 +51,9 @@ dalvik.vm.heaptargetutilization=0.75
 ro.af.client_heap_size_kbyte=7168
 ro.vendor.qti.config.swap=1
 
+# ebpf
+ro.kernel.ebpf.supported=false
+
 # FM
 vendor.hw.fm.init=0
 
