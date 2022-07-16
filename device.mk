@@ -15,6 +15,9 @@
 # limitations under the License.
 #
 
+# Userspace Reboot
+$(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
 
