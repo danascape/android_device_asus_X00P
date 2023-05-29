@@ -92,7 +92,6 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.primary.msm8937 \
     audio.bluetooth.default \
     audio.r_submix.default \
