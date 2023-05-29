@@ -106,7 +106,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.common@5.0 \
     android.hardware.audio.common@5.0-util \
     android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@2.0-service \
     android.hardware.audio.effect@5.0 \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
@@ -168,8 +167,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libgui_vendor \
     libgui_shim \
-    libmmjpeg_interface \
-    libmm-qcamera \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
@@ -181,17 +178,12 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.camera.device@1.0 \
-    vendor.qti.hardware.camera.device@1.0_vendor
+    vendor.qti.hardware.camera.device@1.0
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
     system/core/libprocessgroup/profiles/task_profiles_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
-
-# CNE
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
 
 # ConfigStore
 PRODUCT_PACKAGES += \
@@ -205,7 +197,6 @@ PRODUCT_PACKAGES += \
     libvulkan
 
 PRODUCT_PACKAGES += \
-    copybit.msm8937 \
     gralloc.msm8937 \
     hwcomposer.msm8937 \
     memtrack.msm8937
@@ -213,7 +204,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
@@ -269,9 +259,6 @@ PRODUCT_PACKAGES += \
 # HW Crypto
 PRODUCT_PACKAGES += \
     libcrypto
-
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -342,7 +329,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libstagefrighthw
 
 # Net
@@ -452,9 +438,6 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay
 
 # Thermal
-PRODUCT_PACKAGES += \
-    thermal.msm8937
-
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     android.hardware.thermal@1.0-service
