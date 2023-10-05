@@ -59,10 +59,17 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        product/lib64/lib-imsvideocodec.so)
-            for LIBGUI_SHIM in $(grep -L "libgui_shim.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libgui_shim.so" "${LIBGUI_SHIM}"
+        product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
+        | product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
+            sed -i 's|version="2.0"|version="1.0"|g' "${2}"
+            ;;
+        system_ext/lib64/lib-imscamera.so)
+            for LIBSHIM_IMSVIDEOCODEC in $(grep -L "libshim_imscamera.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_imscamera.so" "${2}"
             done
+            ;;
+        vendor/lib64/libQmiservices.so | vendor/lib64/libril-qc-hal-qmi.so )
+            sed -i 's|libqmiservices.so|libQmiservices.so|g' "${2}"
             ;;
     esac
 }
@@ -74,18 +81,6 @@ extract "${MY_DIR}"/proprietary-files.txt "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
 DEVICE_BLOB_ROOT="${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
-
-#
-# Fix xml version
-#
-function fix_xml_version () {
-    sed -i \
-        's/xml version="2.0"/xml version="1.0"/' \
-        "$DEVICE_BLOB_ROOT"/"$1"
-}
-
-fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
-fix_xml_version product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml
 
 for blob in libarcsoft_nighthawk.so libarcsoft_piczoom.so libarcsoft_videostab.so libarcsoft_night_shot.so; do
     patchelf --remove-needed "libandroid.so" "$DEVICE_BLOB_ROOT/vendor/lib/$blob"
